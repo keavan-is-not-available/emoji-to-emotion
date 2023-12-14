@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>Emotion To Emoji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+      <div id="title1"><span>Emotion To Emoji</span><br>😀😁 😥😭 😤🤬</div>
+
+      <h2>Are you happy, sad or angry?</h2>
+      <br><br>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><label>webcam view</label>
+        <br>
+        <div id="camera1"></div>
+        <button id="take_pic" onclick="taken()">take picture</button>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div><label>Prediction 1:</label><br><label id="n1"></label>
+          <br>
+          <label id="e1"></label>
+        </div>
+
+        <div><label>Prediction 2:</label><br><label id="n2"></label>
+          <br>
+          <label id="e2"></label>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><label>Picture taken</label>
+        <br>
+        <div id="camera2"></div>
+        <button onclick="predict()">Predict Emoji</button>
+      </div>
+     
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

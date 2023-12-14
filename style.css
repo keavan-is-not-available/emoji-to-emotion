@@ -1,0 +1,48 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+#camera1 , #camera2
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+button{
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 19px !important;
+}
+label{
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.549);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 23px !important;
+}
+#title1{
+  font-size: 35px !important;
+}
+span{
+  margin-bottom: 10px;
+}
